@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+.puerta-btn {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    background: radial-gradient(circle at center, #ffffff 60%, #f1f1f1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 8px solid;
+    transition: all 0.4s ease;
+    position: relative;
+    animation: pulso 1.5s infinite;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.puerta-btn.abierto {
+    border-color: #28a745;
+    color: #28a745;
+    background: radial-gradient(circle at center, #e0ffe6 60%, #c1f4d0);
+    box-shadow: 0 0 20px rgba(40, 167, 69, 0.5);
+}
+
+.puerta-btn.cerrado {
+    border-color: #dc3545;
+    color: #dc3545;
+    background: radial-gradient(circle at center, #ffeaea 60%, #f8c9c9);
+    box-shadow: 0 0 20px rgba(220, 53, 69, 0.5);
+}
+
+/* Animación de latido suave */
+@keyframes pulso {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.camara-box {
+    background-color: #212529;
+    color: white;
+    height: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    border: 2px solid #dee2e6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

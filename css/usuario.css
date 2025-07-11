@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+.sidebar button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+}
+
+table {
+    font-size: 14px;
+}
+
+.modal-content {
+  border-radius: 1rem;
+}
+
+.modal-content {
+  border: none;
+  border-radius: 1rem;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
