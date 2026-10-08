@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { Check, Copy, KeyRound, Loader2 } from "lucide-react";
 import { toast } from "sonner";
@@ -31,8 +31,17 @@ export function CodigoDialog({
   datos: CodigoMostrado | null;
   onClose: () => void;
 }) {
+  return (
+    <Dialog open={datos !== null} onOpenChange={(v) => !v && onClose()}>
+      <DialogContent>
+        <CodigoContenido key={datos?.codigo} datos={datos} onClose={onClose} />
+      </DialogContent>
+    </Dialog>
+  );
+}
+
+function CodigoContenido({ datos, onClose }: { datos: CodigoMostrado | null; onClose: () => void }) {
   const [copiado, setCopiado] = useState(false);
-  useEffect(() => setCopiado(false), [datos]);
 
   async function copiar() {
     if (!datos) return;
@@ -45,8 +54,7 @@ export function CodigoDialog({
   }
 
   return (
-    <Dialog open={datos !== null} onOpenChange={(v) => !v && onClose()}>
-      <DialogContent>
+    <>
         <DialogHeader>
           <DialogTitle>Código de activación</DialogTitle>
           <DialogDescription>
@@ -69,8 +77,7 @@ export function CodigoDialog({
         <DialogFooter>
           <Button onClick={onClose}>Ya lo entregué</Button>
         </DialogFooter>
-      </DialogContent>
-    </Dialog>
+    </>
   );
 }
 
@@ -83,10 +90,19 @@ export function EstadoDialog({
   usuario: Usuario | null;
   onClose: () => void;
 }) {
+  return (
+    <Dialog open={usuario !== null} onOpenChange={(v) => !v && onClose()}>
+      <DialogContent>
+        <EstadoContenido key={usuario?.id} usuario={usuario} onClose={onClose} />
+      </DialogContent>
+    </Dialog>
+  );
+}
+
+function EstadoContenido({ usuario, onClose }: { usuario: Usuario | null; onClose: () => void }) {
   const qc = useQueryClient();
   const suspendido = usuario?.estado === "SUSPENDIDO";
   const [motivo, setMotivo] = useState("");
-  useEffect(() => setMotivo(""), [usuario]);
 
   const cambiar = useMutation({
     mutationFn: () =>
@@ -104,8 +120,7 @@ export function EstadoDialog({
 
   const demasiado = motivo.length > 200;
   return (
-    <Dialog open={usuario !== null} onOpenChange={(v) => !v && onClose()}>
-      <DialogContent>
+    <>
         <DialogHeader>
           <DialogTitle>{suspendido ? "Reactivar usuario" : "Suspender usuario"}</DialogTitle>
           <DialogDescription>
@@ -126,8 +141,7 @@ export function EstadoDialog({
             {suspendido ? "Reactivar" : "Suspender"}
           </Button>
         </DialogFooter>
-      </DialogContent>
-    </Dialog>
+    </>
   );
 }
 
