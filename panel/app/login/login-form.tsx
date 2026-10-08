@@ -61,7 +61,7 @@ export function LoginForm() {
       <Suspense>
         <Aviso />
       </Suspense>
-      <form onSubmit={handleSubmit(onSubmit)} noValidate className="mt-6 flex flex-col gap-4">
+      <form method="post" onSubmit={handleSubmit(onSubmit)} noValidate className="mt-6 flex flex-col gap-4">
         <div className="flex flex-col gap-2">
           <Label htmlFor="username">Usuario</Label>
           <Input

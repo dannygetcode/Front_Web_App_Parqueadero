@@ -18,6 +18,8 @@ const csp = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  // Solo desarrollo: hosts de la red local desde los que se abre el panel (separados por coma).
+  allowedDevOrigins: (process.env.ALLOWED_DEV_ORIGINS ?? "").split(",").map((h) => h.trim()).filter(Boolean),
   turbopack: {
     rules: {
       "*.css": {
