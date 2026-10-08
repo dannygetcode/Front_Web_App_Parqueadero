@@ -50,3 +50,9 @@ export const CARROCERIAS: Record<string, string> = {
   COUPE: "Coupé",
   OTRO: "Otra",
 };
+
+/** Días enteros desde hoy hasta una fecha "YYYY-MM-DD" (negativo si ya pasó). */
+export function diasHasta(valor: string): number {
+  const [y, m, d] = valor.slice(0, 10).split("-").map(Number);
+  return Math.ceil((new Date(y, m - 1, d).getTime() - Date.now()) / 86_400_000);
+}
