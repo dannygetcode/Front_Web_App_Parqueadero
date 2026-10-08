@@ -5,12 +5,15 @@ import { problemSchema, type Problem } from "@/lib/schemas";
 export class ApiError extends Error {
   readonly status: number;
   readonly problem: Problem;
+  /** Cuerpo JSON crudo de la respuesta de error (p. ej. el evento de un acceso denegado). */
+  readonly body: unknown;
 
-  constructor(status: number, problem: Problem) {
+  constructor(status: number, problem: Problem, body: unknown = null) {
     super(problem.detail ?? problem.title ?? "Ocurrió un error inesperado.");
     this.name = "ApiError";
     this.status = status;
     this.problem = problem;
+    this.body = body;
   }
 }
 
@@ -53,7 +56,10 @@ export async function api<T extends z.ZodType>(
     const parsed = problemSchema.safeParse(json);
     throw new ApiError(
       res.status,
-      parsed.success ? parsed.data : { detail: "El servidor respondió con un error inesperado." },
+      parsed.success && parsed.data.detail
+        ? parsed.data
+        : { detail: "El servidor respondió con un error inesperado." },
+      json,
     );
   }
   const parsed = schema.safeParse(json);
@@ -61,6 +67,31 @@ export async function api<T extends z.ZodType>(
     throw new ApiError(res.status, { detail: "La respuesta no tiene el formato esperado." });
   }
   return parsed.data;
+}
+
+/** Envía JSON (POST, PUT o DELETE) al BFF y valida la respuesta. */
+export function apiSend<T extends z.ZodType>(
+  method: "POST" | "PUT" | "DELETE",
+  path: string,
+  schema: T,
+  body?: unknown,
+): Promise<z.infer<T>> {
+  return api(path, schema, {
+    method,
+    headers: body === undefined ? {} : { "Content-Type": "application/json" },
+    body: body === undefined ? undefined : JSON.stringify(body),
+  });
+}
+
+/** Descarga un binario protegido (comprobante) y devuelve una URL de objeto temporal. */
+export async function apiBlobUrl(path: string): Promise<string> {
+  const res = await fetch(path, { credentials: "same-origin" });
+  if (res.status === 401 && typeof window !== "undefined") {
+    // eslint-disable-next-line @next/next/no-location-assign-relative-destination
+    window.location.assign("/login?aviso=sesion");
+  }
+  if (!res.ok) throw new ApiError(res.status, { detail: "No se pudo cargar la imagen del comprobante." });
+  return URL.createObjectURL(await res.blob());
 }
 
 export function errorMessage(e: unknown): string {

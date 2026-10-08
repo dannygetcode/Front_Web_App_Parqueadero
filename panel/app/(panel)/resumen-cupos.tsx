@@ -19,10 +19,10 @@ function estadoDeCupo(c: Cupo): Estado {
 }
 
 export function ResumenCupos() {
-  const cupos = useQuery({ queryKey: ["cupos"], queryFn: () => api("/api/cupos", cuposSchema) });
+  const cupos = useQuery({ queryKey: ["cupos"], queryFn: () => api("/api/bff/cupos", cuposSchema) });
   const ocupacion = useQuery({
     queryKey: ["ocupacion"],
-    queryFn: () => api("/api/ocupacion", ocupacionSchema),
+    queryFn: () => api("/api/bff/accesos/ocupacion", ocupacionSchema),
   });
 
   if (cupos.isError) {

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { UnderConstruction } from "@/components/shell/under-construction";
+import { PuertaView } from "@/app/(panel)/puerta/puerta-view";
 
 export const metadata: Metadata = { title: "Puerta" };
 
 export default function PuertaPage() {
-  return <UnderConstruction titulo="Puerta" descripcion="Apertura, cierre e historial de accesos." />;
+  return <PuertaView />;
 }

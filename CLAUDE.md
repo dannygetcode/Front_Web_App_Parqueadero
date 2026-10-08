@@ -18,10 +18,10 @@ npm run build && npm run lint && npx tsc --noEmit
 Variables (solo del servidor, sin prefijo `NEXT_PUBLIC_`): `BACKEND_URL` (backend de Spring Boot, por defecto `http://127.0.0.1:8080`). `.env.local` está ignorado por git; no escribas credenciales en ningún archivo.
 
 ## Estructura de panel/
-- `app/login`, `app/(panel)/` — login y pantallas autenticadas (Resumen, Usuarios, Pagos, Puerta)
-- `app/api/` — BFF: `auth/login`, `auth/logout`, `cupos`, `ocupacion`
-- `lib/server/` — solo servidor: `backend.ts` (fetch con Bearer, validación zod, manejo de 401), `origin.ts` (validación de Origin)
-- `lib/api-client.ts` (cliente del navegador hacia el BFF), `lib/schemas.ts` (zod), `lib/session.ts` (cookie)
+- `app/login`, `app/(panel)/` — login y pantallas autenticadas (Resumen, Usuarios, Pagos, Puerta); cada pantalla tiene su `*-view.tsx` cliente
+- `app/api/` — BFF: `auth/login`, `auth/logout` y `bff/[...path]` (proxy genérico con lista blanca)
+- `lib/server/` — solo servidor: `backend.ts` (`forward`: lista blanca de método y ruta, Bearer, manejo de 401, límite de cuerpo), `origin.ts` (validación de Origin)
+- `lib/api-client.ts` (cliente del navegador hacia el BFF: `api`, `apiSend`, `apiBlobUrl`), `lib/schemas.ts` (zod de DTO y formularios), `lib/queries.ts`, `lib/mutations.ts`, `lib/format.ts`, `lib/session.ts`
 - `components/brand/` (PlateChip, StatusBadge, KpiCard, SectionHeader, EmptyState, ErrorState, Logo), `components/data/` (tabla base), `components/shell/` (layout), `components/ui/` (shadcn)
 - `app/globals.css` — tokens de diseño como variables CSS
 
@@ -31,6 +31,12 @@ Variables (solo del servidor, sin prefijo `NEXT_PUBLIC_`): `BACKEND_URL` (backen
 - `proxy.ts` protege todo salvo `/login` y `/api/auth/login`. Ante 401 del backend se borra la cookie y el cliente va a `/login?aviso=sesion`.
 - Los route handlers que modifican estado llaman a `rejectForeignOrigin`. Sin `dangerouslySetInnerHTML`.
 - Los errores del backend son ProblemDetail (RFC 9457) en español; se muestran con sonner o `ErrorState`.
+
+## Cómo agregar una llamada al backend
+1. Añade `"MÉTODO ruta/:id"` a la lista `ALLOWED` de `lib/server/backend.ts` (sin eso el BFF responde 404).
+2. Define el schema zod en `lib/schemas.ts`.
+3. Llama con `api` / `apiSend` desde un `useQuery` o `useMutation` apuntando a `/api/bff/<ruta del backend sin /api>`.
+Los comprobantes se piden con `apiBlobUrl` (imagen protegida, nunca una URL directa al backend). El código de activación de un usuario solo se muestra al crearlo o regenerarlo; no se guarda.
 
 ## Reglas
 - **Nada de emojis** en UI, código, textos, commits ni docs. Iconos solo con lucide.
@@ -42,6 +48,7 @@ Variables (solo del servidor, sin prefijo `NEXT_PUBLIC_`): `BACKEND_URL` (backen
 - Dependencias nuevas solo con justificación.
 
 ## Pendiente
-- Pantallas de Usuarios, Pagos y Puerta (hoy "en construcción"), Cámaras y Configuración no existen todavía en `panel/`.
+- Cámaras y Configuración (tarifas, cupos) no existen todavía en `panel/`.
+- Sin pruebas automatizadas; la verificación ha sido build, lint, tsc y curl contra el BFF.
 - Retirar el frontend legado de la raíz al final.
 - CSP con `unsafe-inline` en scripts (Next lo exige sin nonce); evaluar CSP con nonce.
