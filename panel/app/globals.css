@@ -1,0 +1,192 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  Sistema de diseño "Cupo" (señalética vial).
+  Espaciado: múltiplos de 4 px (utilidades de Tailwind).
+  Radios: 8 controles, 12 tarjetas, 20 hojas. Elevación por tono, no por sombra.
+*/
+
+:root {
+  /* Superficies (asfalto / pizarra) */
+  --background: #f3f5f7;
+  --foreground: #151b23;
+  --card: #ffffff;
+  --card-foreground: #151b23;
+  --popover: #ffffff;
+  --popover-foreground: #151b23;
+  --muted: #e7ebef;
+  --muted-foreground: #4a5563;
+  --accent: #e3ecfa;
+  --accent-foreground: #0a3f8f;
+  --secondary: #e7ebef;
+  --secondary-foreground: #151b23;
+  --border: #d5dbe2;
+  --input: #bcc5cf;
+  --ring: #0b5bd3;
+
+  /* Marca: azul de la señal P y amarillo de placa (solo como fondo, texto oscuro) */
+  --primary: #0b5bd3;
+  --primary-foreground: #ffffff;
+  --plate: #ffc400;
+  --plate-foreground: #151b23;
+  --destructive: #b42318;
+
+  /* Estados: fondo suave y texto con contraste AA */
+  --st-libre: #0f6a37;
+  --st-libre-bg: #dcf3e3;
+  --st-ocupado: #a31d1d;
+  --st-ocupado-bg: #fbe1e1;
+  --st-por-vencer: #744500;
+  --st-por-vencer-bg: #ffeabb;
+  --st-suspendido: #3b4551;
+  --st-suspendido-bg: #e2e6ea;
+  --st-vencido: #8a1c4a;
+  --st-vencido-bg: #fadfeb;
+  --st-activo: #0a4aa8;
+  --st-activo-bg: #dce8fb;
+
+  --sidebar: #ffffff;
+  --sidebar-foreground: #151b23;
+  --sidebar-primary: #0b5bd3;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e3ecfa;
+  --sidebar-accent-foreground: #0a3f8f;
+  --sidebar-border: #d5dbe2;
+  --sidebar-ring: #0b5bd3;
+
+  --radius: 0.5rem;
+  --radius-card: 0.75rem;
+  --radius-sheet: 1.25rem;
+}
+
+.dark {
+  --background: #0d1217;
+  --foreground: #e8ecf0;
+  --card: #151b22;
+  --card-foreground: #e8ecf0;
+  --popover: #1b222a;
+  --popover-foreground: #e8ecf0;
+  --muted: #1d252d;
+  --muted-foreground: #a3aebb;
+  --accent: #14294a;
+  --accent-foreground: #b7d0fb;
+  --secondary: #1d252d;
+  --secondary-foreground: #e8ecf0;
+  --border: #29323c;
+  --input: #3b4653;
+  --ring: #6aa3ff;
+
+  --primary: #5b98f5;
+  --primary-foreground: #08111f;
+  --plate: #ffc400;
+  --plate-foreground: #151b23;
+  --destructive: #ff8a80;
+
+  --st-libre: #74d69f;
+  --st-libre-bg: #12301f;
+  --st-ocupado: #ffa0a0;
+  --st-ocupado-bg: #3b1717;
+  --st-por-vencer: #ffc972;
+  --st-por-vencer-bg: #3a2a0a;
+  --st-suspendido: #b9c3ce;
+  --st-suspendido-bg: #28313b;
+  --st-vencido: #ffa3c4;
+  --st-vencido-bg: #3d1626;
+  --st-activo: #94bcff;
+  --st-activo-bg: #11284a;
+
+  --sidebar: #11171d;
+  --sidebar-foreground: #e8ecf0;
+  --sidebar-primary: #5b98f5;
+  --sidebar-primary-foreground: #08111f;
+  --sidebar-accent: #14294a;
+  --sidebar-accent-foreground: #b7d0fb;
+  --sidebar-border: #29323c;
+  --sidebar-ring: #6aa3ff;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-space-grotesk), var(--font-inter), ui-sans-serif, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-plate: var(--plate);
+  --color-plate-foreground: var(--plate-foreground);
+
+  --color-st-libre: var(--st-libre);
+  --color-st-libre-bg: var(--st-libre-bg);
+  --color-st-ocupado: var(--st-ocupado);
+  --color-st-ocupado-bg: var(--st-ocupado-bg);
+  --color-st-por-vencer: var(--st-por-vencer);
+  --color-st-por-vencer-bg: var(--st-por-vencer-bg);
+  --color-st-suspendido: var(--st-suspendido);
+  --color-st-suspendido-bg: var(--st-suspendido-bg);
+  --color-st-vencido: var(--st-vencido);
+  --color-st-vencido-bg: var(--st-vencido-bg);
+  --color-st-activo: var(--st-activo);
+  --color-st-activo-bg: var(--st-activo-bg);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-card: var(--radius-card);
+  --radius-sheet: var(--radius-sheet);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    font-family: var(--font-sans);
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+}
