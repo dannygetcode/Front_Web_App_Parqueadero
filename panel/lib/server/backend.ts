@@ -46,6 +46,16 @@ const ALLOWED = new Set([
   "POST accesos/lecturas",
   "GET puerta",
   "PUT puerta",
+  // Analítica (solo lectura, rol ADMIN). /api/usuarios/yo/resumen es de la app móvil: no va aquí.
+  "GET analitica/resumen",
+  "GET analitica/ocupacion",
+  "GET analitica/ocupacion/mapa-calor",
+  "GET analitica/ingresos",
+  "GET analitica/morosidad",
+  "GET analitica/permanencia",
+  "GET analitica/pronostico/vacancia",
+  "GET analitica/pronostico/ocupacion",
+  "GET analitica/pronostico/llegadas",
 ]);
 
 const SEGMENT = /^[A-Za-z0-9_-]{1,40}$/;
