@@ -149,7 +149,7 @@ export function MapaCalorBloque({ simulados, hoy }: { simulados: boolean; hoy: s
   };
 
   return (
-    <Tarjeta titulo="Mapa de calor" descripcion={`Carros dentro en promedio, últimas ${SEMANAS_MAPA} semanas`} origen="spring" simulados={simulados}>
+    <Tarjeta titulo="Mapa de calor" descripcion={`Carros dentro en promedio, últimas ${SEMANAS_MAPA} semanas`} origen="spring" simulados={simulados} className="lg:col-span-2">
       <EstadoConsulta q={q} alto="h-48">
         {validas.length === 0 ? (
           <EmptyState icono={CalendarRange} titulo="Sin muestras suficientes" descripcion={`Cada celda necesita al menos ${MIN_MUESTRAS} horas observadas.`} />
