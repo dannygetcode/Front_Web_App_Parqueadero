@@ -11,7 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { DIAS_SEMANA, fmtDec1, fmtMetrica, fmtPct, useAnalitica } from "@/lib/analitica";
+import { DIAS_SEMANA, DIAS_SEMANA_LARGO, MESES, fmtDec1, fmtMetrica, fmtPct, useAnalitica } from "@/lib/analitica";
 import { llegadasSchema, pronosticoOcupacionSchema, vacanciaSchema } from "@/lib/analitica-schemas";
 import { formatearFecha } from "@/lib/format";
 import { cn } from "@/lib/utils";
@@ -19,6 +19,18 @@ import { EstadoConsulta, GraficaOTabla, InsuficienteState, TablaSimple, Tarjeta 
 import { Tooltip as Tip } from "@/app/(panel)/analitica/tooltip";
 
 const config = { mediana: { label: "Carros (mediana)", color: "var(--serie-carro)" } } satisfies ChartConfig;
+
+/** "2026-10-19" -> "19 oct", sin año ni zona horaria. */
+function fechaCorta(fecha: string) {
+  const [, m, d] = fecha.split("-").map(Number);
+  return `${d} ${MESES[m - 1]}`;
+}
+
+/** Nombre del día calculado de la fecha (no se depende del texto del backend). */
+function nombreDia(fecha: string) {
+  const [y, m, d] = fecha.split("-").map(Number);
+  return DIAS_SEMANA_LARGO[(new Date(Date.UTC(y, m - 1, d)).getUTCDay() + 6) % 7];
+}
 
 const n = (r: Record<string, unknown> | null | undefined, k: string) =>
   typeof r?.[k] === "number" ? (r[k] as number) : undefined;
@@ -66,13 +78,13 @@ export function AvisoModelo({ simulados, horizonte }: { simulados: boolean; hori
 
 function Escalon({ etiqueta, p, p10, p90 }: { etiqueta: string; p: number; p10: number; p90: number }) {
   return (
-    <li className="grid grid-cols-[7.5rem_1fr_6.5rem] items-center gap-3 text-sm">
+    <li className="grid grid-cols-[6.5rem_1fr_auto] items-center gap-3 text-sm">
       <span className="text-muted-foreground">{etiqueta}</span>
       <span className="relative h-3 rounded-sm bg-muted" aria-hidden>
         <span className="absolute inset-y-0 rounded-sm bg-serie-carro/25" style={{ left: `${p10 * 100}%`, width: `${Math.max(0.5, (p90 - p10) * 100)}%` }} />
         <span className="absolute inset-y-[-3px] w-1 rounded-sm bg-serie-carro" style={{ left: `calc(${p * 100}% - 2px)` }} />
       </span>
-      <span className="tabular text-right">
+      <span className="tabular whitespace-nowrap text-right">
         <strong>{fmtPct(p)}</strong> <span className="text-muted-foreground">({Math.round(p10 * 100)}-{Math.round(p90 * 100)} %)</span>
       </span>
     </li>
@@ -89,9 +101,10 @@ export function VacanciaBloque({ simulados }: { simulados: boolean }) {
       descripcion="Probabilidad de que se libere al menos un cupo contratado (no es espacio físico ahora mismo)"
       origen="pronostico"
       simulados={simulados}
+      className="lg:col-span-2"
     >
       <EstadoConsulta q={q} tituloError="No se pudo calcular el cupo libre">
-        <div className="flex flex-col gap-6">
+        <div className="grid gap-8 lg:grid-cols-2">
           {tipos.map(([tipo, v]) => (
             <div key={tipo} className="flex flex-col gap-3">
               <h3 className="text-sm font-semibold">
@@ -102,7 +115,7 @@ export function VacanciaBloque({ simulados }: { simulados: boolean }) {
               </h3>
               <ul className="flex flex-col gap-2" aria-label={`Probabilidad por horizonte, ${tipo === "MOTO" ? "moto" : "carros"}`}>
                 {v.probabilidades.map((p) => (
-                  <Escalon key={p.dias} etiqueta={`${p.dias} días (${formatearFecha(p.fecha).replace(/ \d{4}$/, "")})`} p={p.probabilidad} p10={p.p10} p90={p.p90} />
+                  <Escalon key={p.dias} etiqueta={`${p.dias} días (${fechaCorta(p.fecha)})`} p={p.probabilidad} p10={p.p10} p90={p.p90} />
                 ))}
               </ul>
               <p className="text-xs text-muted-foreground">
@@ -304,7 +317,7 @@ export function LlegadasBloque({ simulados }: { simulados: boolean }) {
                     }
                     return [
                       u.cupo ?? "-",
-                      `${p.diaSemana ?? ""} ${formatearFecha(p.fecha)}`.trim(),
+                      `${nombreDia(p.fecha)} ${formatearFecha(p.fecha)}`,
                       p.horaMediana ?? "-",
                       p.horaP25 && p.horaP75 ? `${p.horaP25} a ${p.horaP75}` : "-",
                       <span key="p" className="tabular">
