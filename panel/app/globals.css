@@ -49,6 +49,12 @@
   --st-activo: #0a4aa8;
   --st-activo-bg: #dce8fb;
 
+  /* Analítica: series validadas (CVD y contraste) y marca de datos simulados */
+  --serie-carro: #0b5bd3;
+  --serie-moto: #c2410c;
+  --sim: #5b3cc4;
+  --sim-bg: #ece7fb;
+
   --sidebar: #ffffff;
   --sidebar-foreground: #151b23;
   --sidebar-primary: #0b5bd3;
@@ -99,6 +105,11 @@
   --st-activo: #94bcff;
   --st-activo-bg: #11284a;
 
+  --serie-carro: #4a86e8;
+  --serie-moto: #e26f1c;
+  --sim: #b9a6ff;
+  --sim-bg: #241a45;
+
   --sidebar: #11171d;
   --sidebar-foreground: #e8ecf0;
   --sidebar-primary: #5b98f5;
@@ -148,6 +159,11 @@
   --color-st-vencido-bg: var(--st-vencido-bg);
   --color-st-activo: var(--st-activo);
   --color-st-activo-bg: var(--st-activo-bg);
+
+  --color-serie-carro: var(--serie-carro);
+  --color-serie-moto: var(--serie-moto);
+  --color-sim: var(--sim);
+  --color-sim-bg: var(--sim-bg);
 
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);

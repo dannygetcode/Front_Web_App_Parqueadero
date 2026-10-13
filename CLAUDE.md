@@ -18,10 +18,10 @@ npm run build && npm run lint && npx tsc --noEmit
 Variables (solo del servidor, sin prefijo `NEXT_PUBLIC_`): `BACKEND_URL` (backend de Spring Boot, por defecto `http://127.0.0.1:8080`). `.env.local` está ignorado por git; no escribas credenciales en ningún archivo.
 
 ## Estructura de panel/
-- `app/login`, `app/(panel)/` — login y pantallas autenticadas (Resumen, Usuarios, Pagos, Puerta); cada pantalla tiene su `*-view.tsx` cliente
+- `app/login`, `app/(panel)/` — login y pantallas autenticadas (Resumen, Usuarios, Pagos, Puerta, Analítica); cada pantalla tiene su `*-view.tsx` cliente
 - `app/api/` — BFF: `auth/login`, `auth/logout` y `bff/[...path]` (proxy genérico con lista blanca)
 - `lib/server/` — solo servidor: `backend.ts` (`forward`: lista blanca de método y ruta, Bearer, manejo de 401, límite de cuerpo), `origin.ts` (validación de Origin)
-- `lib/api-client.ts` (cliente del navegador hacia el BFF: `api`, `apiSend`, `apiBlobUrl`), `lib/schemas.ts` (zod de DTO y formularios), `lib/queries.ts`, `lib/mutations.ts`, `lib/format.ts`, `lib/session.ts`
+- `lib/api-client.ts` (cliente del navegador hacia el BFF: `api`, `apiSend`, `apiBlobUrl`), `lib/schemas.ts` (zod de DTO y formularios), `lib/queries.ts`, `lib/mutations.ts`, `lib/format.ts`, `lib/session.ts`, `lib/analitica.ts` y `lib/analitica-schemas.ts` (hooks, fechas de Bogotá, formato y zod de analítica)
 - `components/brand/` (PlateChip, StatusBadge, KpiCard, SectionHeader, EmptyState, ErrorState, Logo), `components/data/` (tabla base), `components/shell/` (layout), `components/ui/` (shadcn)
 - `app/globals.css` — tokens de diseño como variables CSS
 
@@ -38,6 +38,14 @@ Variables (solo del servidor, sin prefijo `NEXT_PUBLIC_`): `BACKEND_URL` (backen
 3. Llama con `api` / `apiSend` desde un `useQuery` o `useMutation` apuntando a `/api/bff/<ruta del backend sin /api>`.
 Los comprobantes se piden con `apiBlobUrl` (imagen protegida, nunca una URL directa al backend). El código de activación de un usuario solo se muestra al crearlo o regenerarlo; no se guarda.
 
+## Analítica (`app/(panel)/analitica/`)
+- Contrato: `../backend/docs/contrato-analitica.md`. Rutas del BFF, todas `GET`: `analitica/resumen`, `analitica/ocupacion`, `analitica/ocupacion/mapa-calor`, `analitica/ingresos`, `analitica/morosidad`, `analitica/permanencia`, `analitica/pronostico/vacancia`, `analitica/pronostico/ocupacion` y `analitica/pronostico/llegadas`. `/api/usuarios/yo/resumen` es de la app móvil y **no** se expone.
+- Pestañas en la URL (`?vista=operacion|dinero|pronostico`). Gráficas con Recharts mediante `components/ui/chart.tsx`; el mapa de calor es una cuadrícula CSS.
+- Interruptor "Incluir datos simulados": apagado por defecto y en la URL (`?simulados=1`). `useAnalitica` lo pone en la query y en la `queryKey`, para que nunca se mezclen resultados reales y simulados. Cuando está activo se ven la banda, el borde `--sim` y la insignia de origen: "Real + simulado" en Spring, "Solo simulado" en el pronóstico.
+- Honestidad: el pronóstico siempre lleva su banda p10-p90. Las métricas del modelo se leen de `metricas.resumen`, nunca van fijas en el código. Con datos insuficientes no se dibuja ninguna cifra (`InsuficienteState`) y las horas sin datos quedan como hueco. `probLleno`, `usuariosDistintos` y `probabilidadLlenoCarro` no se muestran. Las llegadas van plegadas, marcadas "Sin validar", y solo se piden al abrirlas.
+- Un 503 del pronóstico (`PRONOSTICO_NO_DISPONIBLE`) se muestra en su tarjeta con el mensaje del backend y no se reintenta. El resto de la página sigue funcionando.
+- Series: `--serie-carro` y `--serie-moto`, validadas en claro y oscuro con el validador de paletas (daltonismo y contraste). El morado `--sim` nunca se usa como serie. Si se agrega una serie, hay que volver a validar.
+
 ## Reglas
 - **Nada de emojis** en UI, código, textos, commits ni docs. Iconos solo con lucide.
 - Textos de la interfaz en español.
@@ -49,6 +57,7 @@ Los comprobantes se piden con `apiBlobUrl` (imagen protegida, nunca una URL dire
 
 ## Pendiente
 - Cámaras y Configuración (tarifas, cupos) no existen todavía en `panel/`.
+- Analítica: falta un selector de fechas libre (hoy solo hay rangos fijos de 7 días a 12 meses).
 - Sin pruebas automatizadas; la verificación ha sido build, lint, tsc y curl contra el BFF.
 - Retirar el frontend legado de la raíz al final.
 - CSP con `unsafe-inline` en scripts (Next lo exige sin nonce); evaluar CSP con nonce.

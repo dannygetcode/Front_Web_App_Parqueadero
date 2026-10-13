@@ -1,4 +1,4 @@
-import { DoorOpen, CreditCard, LayoutDashboard, Users, type LucideIcon } from "lucide-react";
+import { ChartColumn, DoorOpen, CreditCard, LayoutDashboard, Users, type LucideIcon } from "lucide-react";
 
 export type NavItem = { href: string; label: string; icon: LucideIcon };
 
@@ -7,4 +7,5 @@ export const NAV_ITEMS: NavItem[] = [
   { href: "/usuarios", label: "Usuarios", icon: Users },
   { href: "/pagos", label: "Pagos", icon: CreditCard },
   { href: "/puerta", label: "Puerta", icon: DoorOpen },
+  { href: "/analitica", label: "Analítica", icon: ChartColumn },
 ];

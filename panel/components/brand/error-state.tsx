@@ -6,18 +6,22 @@ export function ErrorState({
   titulo = "No se pudo cargar la información",
   mensaje,
   onReintentar,
+  tono = "error",
   className,
 }: {
   titulo?: string;
   mensaje?: string;
   onReintentar?: () => void;
+  /** "aviso" para servicios caídos temporalmente (p. ej. el pronóstico), sin alarmar. */
+  tono?: "error" | "aviso";
   className?: string;
 }) {
   return (
     <div
       role="alert"
       className={cn(
-        "flex flex-col items-center justify-center gap-3 rounded-card bg-st-ocupado-bg px-6 py-10 text-center text-st-ocupado",
+        "flex flex-col items-center justify-center gap-3 rounded-card px-6 py-10 text-center",
+        tono === "aviso" ? "bg-st-por-vencer-bg text-st-por-vencer" : "bg-st-ocupado-bg text-st-ocupado",
         className,
       )}
     >
