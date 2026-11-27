@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1640" height="760" viewBox="0 0 1640 760">
+<defs>
+<marker id="open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L11,6 L1,11" fill="none" stroke="#13232B" stroke-width="1.4"/></marker>
+<marker id="filled" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1.5 L11,6 L1,10.5 Z" fill="#13232B"/></marker>
+<marker id="hollow" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L15,8 L1,15 Z" fill="#fff" stroke="#13232B" stroke-width="1.3"/></marker>
+<marker id="diamond" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#13232B"/></marker>
+<marker id="odiamond" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#fff" stroke="#13232B" stroke-width="1.2"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="30" y="30" width="1160" height="700" rx="8" fill="#FFFFFF" stroke="#9AA5A8" stroke-width="1.4"/>
+<rect x="30" y="30" width="210" height="700" rx="8" fill="#F6F8F8" stroke="#9AA5A8" stroke-width="1.0"/>
+<rect x="50" y="52" width="26" height="26" rx="6" fill="#D5DBDD" stroke="#9AA5A8" stroke-width="1"/>
+<text x="86.0" y="71.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#13232B">Cupo</text>
+<rect x="54" y="107" width="16" height="16" rx="3" fill="#D5DBDD" stroke="#9AA5A8" stroke-width="1"/>
+<text x="82.0" y="120.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">Resumen</text>
+<rect x="54" y="151" width="16" height="16" rx="3" fill="#D5DBDD" stroke="#9AA5A8" stroke-width="1"/>
+<text x="82.0" y="164.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">Usuarios</text>
+<rect x="54" y="195" width="16" height="16" rx="3" fill="#D5DBDD" stroke="#9AA5A8" stroke-width="1"/>
+<text x="82.0" y="208.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">Pagos</text>
+<rect x="54" y="239" width="16" height="16" rx="3" fill="#D5DBDD" stroke="#9AA5A8" stroke-width="1"/>
+<text x="82.0" y="252.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">Puerta</text>
+<rect x="42" y="274" width="186" height="34" rx="6" fill="#E3F2F1" stroke="#1E6F7A" stroke-width="1.2"/>
+<rect x="54" y="283" width="16" height="16" rx="3" fill="#D5DBDD" stroke="#9AA5A8" stroke-width="1"/>
+<text x="82.0" y="296.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#13232B">Analítica</text>
+<text x="82.0" y="708.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#7A8588">Contraer</text>
+<polyline points="240,94 1190,94" fill="none" stroke="#9AA5A8" stroke-width="1.00"/>
+<rect x="270" y="48" width="320" height="30" rx="6" fill="#E9EDEE" stroke="#9AA5A8" stroke-width="1"/>
+<text x="286.0" y="68.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#7A8588">Buscar (próximamente)</text>
+<rect x="1090" y="50" width="26" height="26" rx="13" fill="#E9EDEE" stroke="#9AA5A8" stroke-width="1"/>
+<rect x="1130" y="50" width="26" height="26" rx="13" fill="#E9EDEE" stroke="#9AA5A8" stroke-width="1"/>
+<text x="270.0" y="140.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="bold" text-anchor="start" fill="#13232B">Analítica</text>
+<text x="270.0" y="162.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#5B6668">Ocupación, dinero y pronóstico</text>
+<rect x="960" y="118" width="190" height="46" rx="8" fill="#fff" stroke="#9AA5A8" stroke-width="1.2"/>
+<rect x="972" y="130" width="36" height="20" rx="10" fill="#1E6F7A" stroke="#1E6F7A" stroke-width="1"/>
+<circle cx="998" cy="140" r="7" fill="#fff"/>
+<text x="1016.0" y="138.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#13232B">Incluir datos simulados</text>
+<text x="1016.0" y="155.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="start" fill="#5B6668">Solo para demostración</text>
+<circle cx="946" cy="141" r="13" fill="#1E6F7A"/>
+<text x="946.0" y="146.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
+<rect x="270" y="180" width="880" height="36" rx="8" fill="#F1ECFB" stroke="#7C5CC4" stroke-width="1.2"/>
+<text x="288.0" y="203.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="normal" text-anchor="start" fill="#5A3FA0">Datos simulados incluidos: estas cifras no son reales.</text>
+<circle cx="1163" cy="198" r="13" fill="#1E6F7A"/>
+<text x="1163.0" y="203.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
+<rect x="270" y="230" width="166" height="100" rx="10" fill="#fff" stroke="#9AA5A8" stroke-width="1.2"/>
+<text x="286.0" y="256.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#5B6668">Contratados</text>
+<rect x="286" y="270" width="74.7" height="22" rx="11.0" fill="#D5DBDD" stroke="none" stroke-width="1.6"/>
+<rect x="286" y="302" width="116.19999999999999" height="8" rx="4.0" fill="#E9EDEE" stroke="none" stroke-width="1.6"/>
+<rect x="448" y="230" width="166" height="100" rx="10" fill="#fff" stroke="#9AA5A8" stroke-width="1.2"/>
+<text x="464.0" y="256.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#5B6668">Dentro ahora</text>
+<rect x="464" y="270" width="74.7" height="22" rx="11.0" fill="#D5DBDD" stroke="none" stroke-width="1.6"/>
+<rect x="464" y="302" width="116.19999999999999" height="8" rx="4.0" fill="#E9EDEE" stroke="none" stroke-width="1.6"/>
+<rect x="626" y="230" width="166" height="100" rx="10" fill="#fff" stroke="#9AA5A8" stroke-width="1.2"/>
+<text x="642.0" y="256.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#5B6668">Ingresos del mes</text>
+<rect x="642" y="270" width="74.7" height="22" rx="11.0" fill="#D5DBDD" stroke="none" stroke-width="1.6"/>
+<rect x="642" y="302" width="116.19999999999999" height="8" rx="4.0" fill="#E9EDEE" stroke="none" stroke-width="1.6"/>
+<rect x="804" y="230" width="166" height="100" rx="10" fill="#fff" stroke="#9AA5A8" stroke-width="1.2"/>
+<text x="820.0" y="256.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#5B6668">Pagos por revisar</text>
+<rect x="820" y="270" width="74.7" height="22" rx="11.0" fill="#D5DBDD" stroke="none" stroke-width="1.6"/>
+<rect x="820" y="302" width="116.19999999999999" height="8" rx="4.0" fill="#E9EDEE" stroke="none" stroke-width="1.6"/>
+<rect x="982" y="230" width="166" height="100" rx="10" fill="#fff" stroke="#9AA5A8" stroke-width="1.2"/>
+<text x="998.0" y="256.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#5B6668">Vencen pronto</text>
+<rect x="998" y="270" width="74.7" height="22" rx="11.0" fill="#D5DBDD" stroke="none" stroke-width="1.6"/>
+<rect x="998" y="302" width="116.19999999999999" height="8" rx="4.0" fill="#E9EDEE" stroke="none" stroke-width="1.6"/>
+<circle cx="1163" cy="280" r="13" fill="#1E6F7A"/>
+<text x="1163.0" y="285.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
+<rect x="270" y="348" width="880" height="32" rx="8" fill="#E9EDEE" stroke="none" stroke-width="1.6"/>
+<rect x="274" y="351" width="286" height="26" rx="6" fill="#fff" stroke="#9AA5A8" stroke-width="1"/>
+<text x="417.0" y="369.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#13232B">Operación</text>
+<text x="710.0" y="369.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">Dinero</text>
+<text x="1003.0" y="369.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">Pronóstico</text>
+<rect x="270" y="392" width="80" height="28" rx="6" fill="#fff" stroke="#9AA5A8" stroke-width="1.1"/>
+<text x="310.0" y="411.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#13232B">7 días</text>
+<rect x="358" y="392" width="80" height="28" rx="6" fill="#1E6F7A" stroke="#1E6F7A" stroke-width="1.1"/>
+<text x="398.0" y="411.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#fff">30 días</text>
+<rect x="446" y="392" width="80" height="28" rx="6" fill="#fff" stroke="#9AA5A8" stroke-width="1.1"/>
+<text x="486.0" y="411.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#13232B">90 días</text>
+<rect x="534" y="392" width="80" height="28" rx="6" fill="#fff" stroke="#9AA5A8" stroke-width="1.1"/>
+<text x="574.0" y="411.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#13232B">12 meses</text>
+<circle cx="645" cy="406" r="13" fill="#1E6F7A"/>
+<text x="645.0" y="411.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
+<rect x="270" y="432" width="880" height="270" rx="10" fill="#fff" stroke="#9AA5A8" stroke-width="1.2"/>
+<text x="288.0" y="460.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#13232B">Ocupación</text>
+<text x="288.0" y="480.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12" font-weight="normal" text-anchor="start" fill="#5B6668">Carros dentro, media por hora</text>
+<rect x="910" y="448" width="70" height="24" rx="5" fill="#E9EDEE" stroke="#9AA5A8" stroke-width="1"/>
+<text x="945.0" y="465.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#13232B">Por hora</text>
+<rect x="986" y="448" width="70" height="24" rx="5" fill="#fff" stroke="#9AA5A8" stroke-width="1"/>
+<text x="1021.0" y="465.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11.5" font-weight="normal" text-anchor="middle" fill="#13232B">Por día</text>
+<polyline points="310,508 1130,508" fill="none" stroke="#9AA5A8" stroke-width="0.90" stroke-dasharray="6 4"/>
+<text x="1130.0" y="502.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="end" fill="#7A8588">Capacidad 6</text>
+<polyline points="310,675 1130,675" fill="none" stroke="#9AA5A8" stroke-width="0.90"/>
+<polyline points="310.0,620.5 318.2,609.684624442225 326.4,610.6243968543079 334.6,618.7099416801074 342.8,623.4235025927586 351.0,618.2507059440939 359.2,607.2233266197661 367.4,601.3195918770238 375.6,608.2814545256527 383.8,625.9858846481908 392.0,645.3726830504128 400.2,658.8635231469317 408.4,665.2333352288323 416.6,666.9712858543531 424.79999999999995,664.9294712740864 433.0,657.3990177467966 441.2,644.4176059581141 449.4,631.0311127407749 457.6,624.0862255213437 465.79999999999995,625.1138746131061 474.0,627.5089762275783 482.2,622.395312018251 490.4,608.0150310900714 498.6,592.8842837475514 506.79999999999995,588.8826774699058 515.0,600.8162055678323 523.2,622.6284268872295 531.4,643.4314705447018 539.5999999999999,656.5747548964142 547.8,662.7407332326343 556.0,665.420672460117 564.2,665.3856897584823 572.4,660.7521408328511 580.5999999999999,651.6110278006714 588.8,642.3335652164527 597.0,637.5997715160402 605.2,636.385995056792 613.4,631.6402402762402 621.5999999999999,617.5028913041281 629.8,597.0215035464201 638.0,581.6800062481507 646.2,582.1719683563147 654.4,599.1510529427597 662.5999999999999,622.9891850152711 670.8,642.4046659168517 679.0,653.05716905768 687.2,658.113892151712 695.4,661.8760076390173 703.5999999999999,664.5170024149288 711.8,663.4275822756379 720.0,658.2192569171903 728.2,652.2282233819917 736.4,648.1744619506699 744.5999999999999,643.4796549812833 752.8,631.9775580704978 761.0,611.4514530553992 769.1999999999999,588.9074991251978 777.4,576.8039602754429 785.5999999999999,582.8256241190913 793.8,603.0835007744569 802.0,625.5854221622136 810.1999999999999,640.468397970928 818.4,646.8902836136336 826.5999999999999,650.5727623181074 834.8,655.9714376005287 843.0,661.9388306496701 851.1999999999999,664.6688861563215 859.4,663.0639001031057 867.5999999999999,659.4791673579022 875.8,655.2127105355643 884.0,647.1259899666818 892.1999999999999,630.7878964140427 900.4,607.461261609543 908.5999999999999,586.6363735331996 916.8,579.7435897872273 925.0,590.3178430857158 933.1999999999999,610.4992101747124 941.4,627.7853726092518 949.5999999999999,635.5347408219784 957.8,637.0502630373894 966.0,640.0283876410508 974.1999999999999,648.0390873442966 982.4,657.8840558946707 990.5999999999999,664.3574583686468 998.8,665.7981494535096 1006.9999999999999,663.9595978220365 1015.1999999999999,659.3647793436745 1023.4,649.0598908958714 1031.6,630.6115858274857 1039.8,607.9664910440647 1048.0,591.390194599169 1056.1999999999998,589.7124576498071 1064.4,602.0911058529007 1072.6,618.1138660706498 1080.8,626.8766757860099 1089.0,626.3145688419385 1097.1999999999998,623.7284469019886 1105.4,627.5795871826754 1113.6,639.3407471708608 1121.8,653.2732807046423" fill="none" stroke="#1E6F7A" stroke-width="1.70"/>
+<circle cx="1163" cy="450" r="13" fill="#1E6F7A"/>
+<text x="1163.0" y="455.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">5</text>
+<text x="1230.0" y="70.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="start" fill="#13232B">Anotaciones</text>
+<circle cx="1243" cy="95" r="13" fill="#1E6F7A"/>
+<text x="1243.0" y="100.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">1</text>
+<text x="1266.0" y="100.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#13232B">Datos simulados</text>
+<text x="1266.0" y="120.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">Apagado por defecto. Va en la URL</text>
+<text x="1266.0" y="138.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">y en la clave de caché.</text>
+<circle cx="1243" cy="169" r="13" fill="#1E6F7A"/>
+<text x="1243.0" y="174.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">2</text>
+<text x="1266.0" y="174.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#13232B">Aviso permanente</text>
+<text x="1266.0" y="194.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">Mientras el interruptor está</text>
+<text x="1266.0" y="212.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">encendido, una franja lo recuerda.</text>
+<circle cx="1243" cy="243" r="13" fill="#1E6F7A"/>
+<text x="1243.0" y="248.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">3</text>
+<text x="1266.0" y="248.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#13232B">Indicadores del día</text>
+<text x="1266.0" y="268.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">Contratados, dentro ahora, ingresos</text>
+<text x="1266.0" y="286.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">del mes, pagos y vencimientos.</text>
+<circle cx="1243" cy="317" r="13" fill="#1E6F7A"/>
+<text x="1243.0" y="322.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">4</text>
+<text x="1266.0" y="322.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#13232B">Pestañas y rango</text>
+<text x="1266.0" y="342.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">Operación, Dinero y Pronóstico,</text>
+<text x="1266.0" y="360.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">con rangos de 7 días a 12 meses.</text>
+<circle cx="1243" cy="391" r="13" fill="#1E6F7A"/>
+<text x="1243.0" y="396.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#fff">5</text>
+<text x="1266.0" y="396.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#13232B">Gráficas</text>
+<text x="1266.0" y="416.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">Recharts con la capacidad marcada.</text>
+<text x="1266.0" y="434.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">El pronóstico muestra su banda</text>
+<text x="1266.0" y="452.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#4B5B63">de incertidumbre y su backtest.</text>
+</svg>

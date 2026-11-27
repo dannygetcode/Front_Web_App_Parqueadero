@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1500" height="1001" viewBox="0 0 1500 1001">
+<defs>
+<marker id="open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L11,6 L1,11" fill="none" stroke="#13232B" stroke-width="1.4"/></marker>
+<marker id="filled" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1.5 L11,6 L1,10.5 Z" fill="#13232B"/></marker>
+<marker id="hollow" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L15,8 L1,15 Z" fill="#fff" stroke="#13232B" stroke-width="1.3"/></marker>
+<marker id="diamond" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#13232B"/></marker>
+<marker id="odiamond" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#fff" stroke="#13232B" stroke-width="1.2"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<polyline points="60,144 60,971" fill="none" stroke="#1E6F7A" stroke-width="1.30"/>
+<polyline points="260,68 260,971" fill="none" stroke="#1E6F7A" stroke-width="1.30"/>
+<polyline points="520,68 520,971" fill="none" stroke="#1E6F7A" stroke-width="1.30"/>
+<polyline points="740,68 740,971" fill="none" stroke="#1E6F7A" stroke-width="1.30"/>
+<polyline points="980,68 980,971" fill="none" stroke="#1E6F7A" stroke-width="1.30"/>
+<polyline points="1280,68 1280,971" fill="none" stroke="#1E6F7A" stroke-width="1.30"/>
+<circle cx="60" cy="26" r="12" fill="#fff" stroke="#13232B" stroke-width="1.5"/>
+<polyline points="60,38 60,72" fill="none" stroke="#13232B" stroke-width="1.50"/>
+<polyline points="38,50 82,50" fill="none" stroke="#13232B" stroke-width="1.50"/>
+<polyline points="40,100 60,72 80,100" fill="none" stroke="#13232B" stroke-width="1.50"/>
+<text x="60.0" y="120.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#13232B">Administrador</text>
+<rect x="162.2" y="20" width="195.6" height="48" rx="8" fill="#E3F2F1" stroke="#1E6F7A" stroke-width="1.3"/>
+<text x="260.0" y="40.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">Navegador</text>
+<text x="260.0" y="58.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">(LoginForm, api-client)</text>
+<rect x="476.2" y="20" width="87.6" height="48" rx="8" fill="#E3F2F1" stroke="#1E6F7A" stroke-width="1.3"/>
+<text x="520.0" y="49.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">proxy.ts</text>
+<rect x="671.0" y="20" width="138.0" height="48" rx="8" fill="#E3F2F1" stroke="#1E6F7A" stroke-width="1.3"/>
+<text x="740.0" y="49.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">/api/auth/login</text>
+<rect x="900.2" y="20" width="159.6" height="48" rx="8" fill="#E3F2F1" stroke="#1E6F7A" stroke-width="1.3"/>
+<text x="980.0" y="49.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">/api/bff/[...path]</text>
+<rect x="1211.0" y="20" width="138.0" height="48" rx="8" fill="#E3F2F1" stroke="#1E6F7A" stroke-width="1.3"/>
+<text x="1280.0" y="49.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">API del backend</text>
+<polyline points="60,170 259,170" fill="none" stroke="#13232B" stroke-width="1.50" marker-end="url(#filled)"/>
+<rect x="62.4" y="152.0" width="195.3" height="17" fill="#fff"/>
+<text x="160.0" y="163.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">Escribe usuario y contraseña</text>
+<circle cx="60" cy="170" r="10" fill="#1E6F7A"/>
+<text x="60.0" y="174.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">1</text>
+<polyline points="260,207 739,207" fill="none" stroke="#13232B" stroke-width="1.50" marker-end="url(#filled)"/>
+<rect x="429.4" y="189.0" width="141.2" height="17" fill="#fff"/>
+<text x="500.0" y="200.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">POST /api/auth/login</text>
+<circle cx="260" cy="207" r="10" fill="#1E6F7A"/>
+<text x="260.0" y="211.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">2</text>
+<polyline points="740,244 780,244 780,262 742,262" fill="none" stroke="#13232B" stroke-width="1.50" marker-end="url(#filled)"/>
+<text x="790.0" y="257.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">valida Origin y cuerpo (zod)</text>
+<circle cx="740" cy="244" r="10" fill="#1E6F7A"/>
+<text x="740.0" y="248.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">3</text>
+<polyline points="740,289 1279,289" fill="none" stroke="#13232B" stroke-width="1.50" marker-end="url(#filled)"/>
+<rect x="912.4" y="271.0" width="195.3" height="17" fill="#fff"/>
+<text x="1010.0" y="282.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">POST /api/admin/login (10 s)</text>
+<circle cx="740" cy="289" r="10" fill="#1E6F7A"/>
+<text x="740.0" y="293.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">4</text>
+<polyline points="1280,326 741,326" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="925.9" y="308.0" width="168.2" height="17" fill="#fff"/>
+<text x="1010.0" y="319.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">{ token, rol, expiraEn }</text>
+<circle cx="1280" cy="326" r="10" fill="#1E6F7A"/>
+<text x="1280.0" y="330.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">5</text>
+<polyline points="740,363 261,363" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="361.8" y="345.0" width="276.4" height="17" fill="#fff"/>
+<text x="500.0" y="356.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">200 + Set-Cookie cupo_session (httpOnly)</text>
+<circle cx="740" cy="363" r="10" fill="#1E6F7A"/>
+<text x="740.0" y="367.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">6</text>
+<polyline points="260,400 519,400" fill="none" stroke="#13232B" stroke-width="1.50" marker-end="url(#filled)"/>
+<rect x="261.9" y="382.0" width="256.1" height="17" fill="#fff"/>
+<text x="390.0" y="393.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">GET /api/bff/usuarios (con la cookie)</text>
+<circle cx="260" cy="400" r="10" fill="#1E6F7A"/>
+<text x="260.0" y="404.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">7</text>
+<polyline points="520,437 979,437" fill="none" stroke="#13232B" stroke-width="1.50" marker-end="url(#filled)"/>
+<rect x="679.4" y="419.0" width="141.2" height="17" fill="#fff"/>
+<text x="750.0" y="430.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">hay cookie: continúa</text>
+<circle cx="520" cy="437" r="10" fill="#1E6F7A"/>
+<text x="520.0" y="441.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">8</text>
+<text x="970.0" y="488.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">[ruta y método en la lista blanca]</text>
+<polyline points="980,526 1279,526" fill="none" stroke="#13232B" stroke-width="1.50" marker-end="url(#filled)"/>
+<rect x="988.4" y="508.0" width="283.2" height="17" fill="#fff"/>
+<text x="1130.0" y="519.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">GET /api/usuarios + Authorization: Bearer</text>
+<circle cx="980" cy="526" r="10" fill="#1E6F7A"/>
+<text x="980.0" y="530.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">9</text>
+<text x="1010.0" y="577.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">[200]</text>
+<polyline points="1280,615 981,615" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="1113.5" y="597.0" width="33.0" height="17" fill="#fff"/>
+<text x="1130.0" y="608.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">JSON</text>
+<circle cx="1280" cy="615" r="10" fill="#1E6F7A"/>
+<text x="1280.0" y="619.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">10</text>
+<polyline points="980,652 261,652" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="498.7" y="634.0" width="242.6" height="17" fill="#fff"/>
+<text x="620.0" y="645.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">JSON, que api-client valida con zod</text>
+<circle cx="980" cy="652" r="10" fill="#1E6F7A"/>
+<text x="980.0" y="656.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">11</text>
+<polyline points="940,681 1440,681" fill="none" stroke="#13232B" stroke-width="1.00" stroke-dasharray="6 4"/>
+<text x="1010.0" y="701.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">[401: token vencido o revocado]</text>
+<polyline points="1280,733 981,733" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="1116.9" y="715.0" width="26.3" height="17" fill="#fff"/>
+<text x="1130.0" y="726.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">401</text>
+<circle cx="1280" cy="733" r="10" fill="#1E6F7A"/>
+<text x="1280.0" y="737.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">12</text>
+<polyline points="980,770 261,770" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="546.0" y="752.0" width="148.0" height="17" fill="#fff"/>
+<text x="620.0" y="763.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">401 y borra la cookie</text>
+<circle cx="980" cy="770" r="10" fill="#1E6F7A"/>
+<text x="980.0" y="774.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">13</text>
+<polyline points="260,807 300,807 300,825 262,825" fill="none" stroke="#13232B" stroke-width="1.50" marker-end="url(#filled)"/>
+<text x="310.0" y="820.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">window.location a /login?aviso=sesion</text>
+<circle cx="260" cy="807" r="10" fill="#1E6F7A"/>
+<text x="260.0" y="811.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">14</text>
+<rect x="940" y="557" width="500" height="285" fill="none" stroke="#13232B" stroke-width="1.2"/>
+<path d="M940,557 H990 V571 L982,579 H940 Z" fill="#E3F2F1" stroke="#13232B" stroke-width="1.2"/>
+<text x="948.0" y="573.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#13232B">alt</text>
+<polyline points="900,858 1460,858" fill="none" stroke="#13232B" stroke-width="1.00" stroke-dasharray="6 4"/>
+<text x="970.0" y="878.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">[ruta fuera de la lista]</text>
+<polyline points="980,910 261,910" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="529.1" y="892.0" width="181.8" height="17" fill="#fff"/>
+<text x="620.0" y="903.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">404, sin llamar al backend</text>
+<circle cx="980" cy="910" r="10" fill="#1E6F7A"/>
+<text x="980.0" y="914.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="11" font-weight="normal" text-anchor="middle" fill="#fff">15</text>
+<rect x="900" y="468" width="560" height="469" fill="none" stroke="#13232B" stroke-width="1.2"/>
+<path d="M900,468 H950 V482 L942,490 H900 Z" fill="#E3F2F1" stroke="#13232B" stroke-width="1.2"/>
+<text x="908.0" y="484.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#13232B">alt</text>
+</svg>

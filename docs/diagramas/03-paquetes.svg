@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="1500" height="640" viewBox="0 0 1500 640">
+<defs>
+<marker id="open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="12" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L11,6 L1,11" fill="none" stroke="#13232B" stroke-width="1.4"/></marker>
+<marker id="filled" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1.5 L11,6 L1,10.5 Z" fill="#13232B"/></marker>
+<marker id="hollow" viewBox="0 0 16 16" refX="15" refY="8" markerWidth="16" markerHeight="16" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,1 L15,8 L1,15 Z" fill="#fff" stroke="#13232B" stroke-width="1.3"/></marker>
+<marker id="diamond" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#13232B"/></marker>
+<marker id="odiamond" viewBox="0 0 20 12" refX="1" refY="6" markerWidth="20" markerHeight="12" orient="auto-start-reverse" markerUnits="userSpaceOnUse">
+<path d="M1,6 L10,1 L19,6 L10,11 Z" fill="#fff" stroke="#13232B" stroke-width="1.2"/></marker>
+</defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="20" y="50" width="1460" height="570" fill="none" stroke="#13232B" stroke-width="2.2"/>
+<path d="M20,50 V20 H170 V50" fill="#E3F2F1" stroke="#13232B" stroke-width="2.2"/>
+<text x="32.0" y="41.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="15.5" font-weight="bold" text-anchor="start" fill="#13232B">pkg panel/</text>
+<rect x="50" y="80" width="330" height="510" rx="8" fill="none" stroke="#13232B" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="62.0" y="102.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" text-anchor="start" fill="#13232B">app/  (rutas)</text>
+<rect x="70" y="125" width="290" height="66" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="215.0" y="152.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">login/</text>
+<text x="215.0" y="171.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">pantalla de acceso</text>
+<rect x="70" y="210" width="290" height="110" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="215.0" y="240.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">(panel)/</text>
+<text x="215.0" y="259.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">page.tsx (Resumen), usuarios/,</text>
+<text x="215.0" y="278.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">pagos/, puerta/, analitica/</text>
+<text x="215.0" y="297.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">layout.tsx con AppShell</text>
+<rect x="70" y="340" width="290" height="92" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="215.0" y="371.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">api/</text>
+<text x="215.0" y="390.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">auth/login, auth/logout</text>
+<text x="215.0" y="409.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">bff/[...path]</text>
+<rect x="70" y="452" width="290" height="66" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="215.0" y="479.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">globals.css</text>
+<text x="215.0" y="498.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">tokens claro y oscuro</text>
+<rect x="420" y="80" width="330" height="510" rx="8" fill="none" stroke="#13232B" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="432.0" y="102.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" text-anchor="start" fill="#13232B">components/</text>
+<rect x="440" y="125" width="290" height="92" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="585.0" y="156.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">brand/</text>
+<text x="585.0" y="175.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">PlateChip, StatusBadge, KpiCard,</text>
+<text x="585.0" y="194.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">Persiana, EmptyState, ErrorState</text>
+<rect x="440" y="237" width="290" height="66" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="585.0" y="264.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">shell/</text>
+<text x="585.0" y="283.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">AppShell, barra lateral, menús</text>
+<rect x="440" y="323" width="290" height="66" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="585.0" y="350.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">data/</text>
+<text x="585.0" y="369.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">DataTable y campos</text>
+<rect x="440" y="409" width="290" height="66" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="585.0" y="436.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">ui/</text>
+<text x="585.0" y="455.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">shadcn/ui sobre Radix</text>
+<rect x="790" y="80" width="330" height="510" rx="8" fill="none" stroke="#13232B" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="802.0" y="102.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" text-anchor="start" fill="#13232B">lib/  (navegador)</text>
+<rect x="810" y="125" width="290" height="80" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="955.0" y="159.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">queries.ts, mutations.ts</text>
+<text x="955.0" y="178.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">hooks de TanStack Query</text>
+<rect x="810" y="225" width="290" height="80" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="955.0" y="259.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">analitica.ts</text>
+<text x="955.0" y="278.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">useAnalitica, fechas de Bogotá</text>
+<rect x="810" y="325" width="290" height="80" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="955.0" y="359.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">api-client.ts</text>
+<text x="955.0" y="378.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">api() y apiSend(), ApiError</text>
+<rect x="810" y="425" width="290" height="92" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="955.0" y="456.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">schemas.ts</text>
+<text x="955.0" y="475.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">analitica-schemas.ts</text>
+<text x="955.0" y="494.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">contratos zod del backend</text>
+<rect x="1160" y="80" width="290" height="510" rx="8" fill="none" stroke="#13232B" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="1172.0" y="102.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="normal" text-anchor="start" fill="#13232B">lib/server/  (solo servidor)</text>
+<rect x="1180" y="125" width="250" height="92" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="1305.0" y="156.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">backend.ts</text>
+<text x="1305.0" y="175.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">lista blanca y forward()</text>
+<text x="1305.0" y="194.2" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">BACKEND_URL</text>
+<rect x="1180" y="237" width="250" height="66" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="1305.0" y="264.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">origin.ts</text>
+<text x="1305.0" y="283.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">valida el Origin</text>
+<rect x="1180" y="323" width="250" height="66" rx="8" fill="#F4FAF9" stroke="#13232B" stroke-width="1.6"/>
+<text x="1305.0" y="350.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="14.5" font-weight="bold" text-anchor="middle" fill="#13232B">session.ts</text>
+<text x="1305.0" y="369.7" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#13232B">cookie cupo_session</text>
+<path d="M1180,430 H1416 L1430,444 V550 H1180 Z" fill="#FFF8E6" stroke="#13232B" stroke-width="1.2"/>
+<path d="M1416,430 V444 H1430" fill="none" stroke="#13232B" stroke-width="1.1"/>
+<text x="1190.0" y="452.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">Nunca se importa desde</text>
+<text x="1190.0" y="470.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">un client component:</text>
+<text x="1190.0" y="488.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">el token y BACKEND_URL</text>
+<text x="1190.0" y="506.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#13232B">no salen del servidor.</text>
+<polyline points="360,265 440,265" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<text x="400.0" y="257.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#13232B">«use»</text>
+<polyline points="360,290 385,290 385,114 790,114 790,165 810,165" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<polyline points="955,205 955,225" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<polyline points="1080,205 1080,325" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<polyline points="955,305 955,325" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<polyline points="955,405 955,425" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<polyline points="360,386 395,386 395,560 1140,560 1140,170 1180,170" fill="none" stroke="#13232B" stroke-width="1.50" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="653.2" y="541.5" width="233.5" height="16.5" fill="#fff"/>
+<text x="770.0" y="552.0" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" font-weight="normal" text-anchor="middle" fill="#13232B">«use» solo desde los route handlers</text>
+</svg>
